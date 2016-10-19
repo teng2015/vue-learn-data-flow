@@ -6,6 +6,17 @@
   </head>
   <body>
     <div id="app"></div>
+
+    <script type="text/javascript">
+        var store = {
+            state: {
+                messages: []
+            },
+            newMessage (msg) {
+                this.state.messages.push(msg);
+            }
+        }
+    </script>
     <script src="/dist/build.js"></script>
   </body>
 </html>
